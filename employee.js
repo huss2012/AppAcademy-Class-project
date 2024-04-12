@@ -4,7 +4,13 @@ class Employee {
         this.salary = salary;
         this.title = title;
         this.manager = manager;
+
+        if (manager !== null) {
+            manager.addEmployee(this);
+        }
     }
+
+
 }
 
 
